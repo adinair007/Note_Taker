@@ -8,7 +8,7 @@ const writeFileAsync = util.promisify(fs.writeFile);
 
 //--GET REQUEST--
 router.get("/notes", (req, res) => {
-  readFileAsync("../db/db.json", "utf8").then((data) => {
+  readFileAsync("./db/db.json", "utf8").then((data) => {
     const notes = [].concat(JSON.parse(data));
     res.json(notes);
   });
@@ -17,7 +17,7 @@ router.get("/notes", (req, res) => {
 //--POST REQUEST--
 router.post("/notes", (req, res) => {
   const newNote = req.body;
-  readFileAsync("../db/db.json", "utf8")
+  readFileAsync("./db/db.json", "utf8")
     .then((data) => {
       const notes = [].concat(JSON.parse(data));
       newNote.id = notes.length + 1;
@@ -25,7 +25,7 @@ router.post("/notes", (req, res) => {
       return notes;
     })
     .then((notes) => {
-      writeFileAsync("../db/db.json", JSON.stringify(notes));
+      writeFileAsync("./db/db.json", JSON.stringify(notes));
       res.json(newNote);
     });
 });
@@ -33,7 +33,7 @@ router.post("/notes", (req, res) => {
 //--DELETE REQUEST
 router.delete("/notes/:id", (req, res) => {
   const idDelete = parseInt(req.params.id);
-  readFileAsync("../db/db.json", "utf-8")
+  readFileAsync("./db/db.json", "utf-8")
     .then((data) => {
       const notes = [].concat(JSON.parse(data));
       const newData = [];
@@ -45,7 +45,7 @@ router.delete("/notes/:id", (req, res) => {
       return newData;
     })
     .then((notes) => {
-      writeFileAsync("../db/db.json", JSON.stringify(notes));
+      writeFileAsync("./db/db.json", JSON.stringify(notes));
       res.send("Saved!");
     });
 });

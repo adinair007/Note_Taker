@@ -15,7 +15,7 @@
   An application used to write, save and delete notes using Express.
 
   ## [Useage](#table-of-contents)
-  Add a note title and description, then press the save button. To write a new note, press the '+' button. Delete a pre-exxisting note by clicking on the trash button.
+  Add a note title and description, then press the save button. To write a new note, press the '+' button. Delete a pre-existing note by clicking on the trash button.
   
   ## [Deployment](#table-of-contents)
   Deployed application : https://notetaker-007.herokuapp.com

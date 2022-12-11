@@ -7,7 +7,6 @@
   * [Deployment](#deployment)
   * [Screenshots](#screenshot)
   * [License](#license)
-  * [Tests](#tests)
   * [Questions](#questions)
 
 [MIT](https://choosealicense.com/licenses/MIT)
@@ -22,9 +21,10 @@
   Deployed application : https://notetaker-007.herokuapp.com
   
   ## [Screenshots](#table-of-contents)
+  ![Note1](https://user-images.githubusercontent.com/112667543/206884372-cdf9e1ef-2993-4edd-9e32-11e28a6f6dc3.png)
   
+  ![Note2](https://user-images.githubusercontent.com/112667543/206884374-8c316a1d-bd1e-489d-b750-f5b4e1851d1a.png)
   
-    
   ## [License](#table-of-contents)
   This application has the following license:
   [MIT](https://choosealicense.com/licenses/MIT)
